@@ -1,0 +1,179 @@
+### 상품 추가
+POST http://localhost:8082/seller/product
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaSm5xd1g4RkYyMUdCTmZuckZMWHFKTm9ReGh1emFSbWFlVEZ3VTVYN3hNPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMjM1OTI2LCJleHAiOjE2NjEzMjIzMjZ9.P3_WsjNmVz9NFPMKGzEqeVE_gLbneo8En03taAjHGu4
+
+{
+  "name": "나이키 에어포스",
+  "description": "상품 설명",
+  "items": [
+    {
+      "count": 1,
+      "name": "270",
+      "price": 100000
+    }
+  ]
+}
+
+
+### 상품 아이템 추가
+POST http://localhost:8082/seller/product/item
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaSm5xd1g4RkYyMUdCTmZuckZMWHFKTm9ReGh1emFSbWFlVEZ3VTVYN3hNPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMjM1OTI2LCJleHAiOjE2NjEzMjIzMjZ9.P3_WsjNmVz9NFPMKGzEqeVE_gLbneo8En03taAjHGu4
+
+{
+  "productId": 1,
+  "count": 1,
+  "name": "270",
+  "price": 100000
+}
+
+
+### 상품 수정
+PUT http://localhost:8082/seller/product
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaSm5xd1g4RkYyMUdCTmZuckZMWHFKTm9ReGh1emFSbWFlVEZ3VTVYN3hNPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMjM1OTI2LCJleHAiOjE2NjEzMjIzMjZ9.P3_WsjNmVz9NFPMKGzEqeVE_gLbneo8En03taAjHGu4
+
+{
+  "id": 1,
+  "name": "나이키 에어포스 한정판",
+  "description": "상품 설명",
+  "items": [
+    {
+      "id": 1,
+      "name": "280",
+      "price": 100000,
+      "count": 1
+    }
+  ]
+}
+
+
+### 상품 아이템 수정
+PUT http://localhost:8082/seller/product/item
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaSm5xd1g4RkYyMUdCTmZuckZMWHFKTm9ReGh1emFSbWFlVEZ3VTVYN3hNPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMjM1OTI2LCJleHAiOjE2NjEzMjIzMjZ9.P3_WsjNmVz9NFPMKGzEqeVE_gLbneo8En03taAjHGu4
+
+{
+  "id": 1,
+  "name": "260",
+  "price": 100000,
+  "count": 1
+}
+
+### 상품 삭제
+DELETE http://localhost:8082/seller/product?id=1
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaSm5xd1g4RkYyMUdCTmZuckZMWHFKTm9ReGh1emFSbWFlVEZ3VTVYN3hNPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMjM1OTI2LCJleHAiOjE2NjEzMjIzMjZ9.P3_WsjNmVz9NFPMKGzEqeVE_gLbneo8En03taAjHGu4
+
+{
+  "id": 1,
+  "name": "나이키 에어포스 한정판",
+  "description": "상품 설명",
+  "items": [
+    {
+      "id": 1,
+      "name": "280",
+      "price": 100000,
+      "count": 1
+    }
+  ]
+}
+
+
+### 상품 아이템 삭제
+DELETE http://localhost:8082/seller/product/item?id=1
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaSm5xd1g4RkYyMUdCTmZuckZMWHFKTm9ReGh1emFSbWFlVEZ3VTVYN3hNPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMjM1OTI2LCJleHAiOjE2NjEzMjIzMjZ9.P3_WsjNmVz9NFPMKGzEqeVE_gLbneo8En03taAjHGu4
+
+
+### 상품 검색
+GET http://localhost:8082/search/product?name=나이키
+Content-Type: application/json
+
+### 상품 디테일 검색
+GET http://localhost:8082/search/product/detail?productId=1
+Content-Type: application/json
+
+
+{
+      "id": 1,
+      "name": "280",
+      "price": 100000,
+      "count": 1
+    }
+
+### 카트 추가
+POST http://localhost:8082/customer/cart
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5aG5haWpCZFptQnBtMDQ4T1JNZzh3PT0iLCJqdGkiOiJDbVlEdjVNSzVZVXlpazhLR05Ed293PT0iLCJyb2xlcyI6IkNVU1RPTUVSIiwiaWF0IjoxNjYxMjM1OTU0LCJleHAiOjE2NjEzMjIzNTR9.mizlDGWQdM45Ryf2-HNyHlPLnI5-XyYfXRHsas56kGI
+
+{
+  "id": 1,
+  "name": "나이키 에어포스 2",
+  "sellerId" : 1,
+  "description": "상품 설명",
+  "items": [
+    {
+      "id": 1,
+      "name": "270",
+      "price": 100000,
+      "count": 1
+    }
+  ]
+}
+
+### 장바구니 조회
+GET http://localhost:8082/customer/cart
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5aG5haWpCZFptQnBtMDQ4T1JNZzh3PT0iLCJqdGkiOiJDbVlEdjVNSzVZVXlpazhLR05Ed293PT0iLCJyb2xlcyI6IkNVU1RPTUVSIiwiaWF0IjoxNjYxMjM1OTU0LCJleHAiOjE2NjEzMjIzNTR9.mizlDGWQdM45Ryf2-HNyHlPLnI5-XyYfXRHsas56kGI
+
+### 장바구니 업데이트
+PUT http://localhost:8082/customer/cart
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5aG5haWpCZFptQnBtMDQ4T1JNZzh3PT0iLCJqdGkiOiJDbVlEdjVNSzVZVXlpazhLR05Ed293PT0iLCJyb2xlcyI6IkNVU1RPTUVSIiwiaWF0IjoxNjYxMjM1OTU0LCJleHAiOjE2NjEzMjIzNTR9.mizlDGWQdM45Ryf2-HNyHlPLnI5-XyYfXRHsas56kGI
+
+{
+  "customerId": 1,
+  "products": [
+    {
+      "id": 1,
+      "sellerId": 1,
+      "name": "나이키 에어포스 2",
+      "description": "상품 설명",
+      "items": [
+        {
+          "id": 1,
+          "name": "270",
+          "price": 110000,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "messages": []
+}
+
+
+### 결제
+POST http://localhost:8082/customer/cart/order
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5aG5haWpCZFptQnBtMDQ4T1JNZzh3PT0iLCJqdGkiOiJDbVlEdjVNSzVZVXlpazhLR05Ed293PT0iLCJyb2xlcyI6IkNVU1RPTUVSIiwiaWF0IjoxNjYxMjM1OTU0LCJleHAiOjE2NjEzMjIzNTR9.mizlDGWQdM45Ryf2-HNyHlPLnI5-XyYfXRHsas56kGI
+
+{
+  "customerId": 1,
+  "products": [
+    {
+      "id": 3,
+      "sellerId": 1,
+      "name": "다쿠아즈",
+      "description": "상품 설명",
+      "items": [
+        {
+          "id": 5,
+          "name": "딸기맛 다쿠아즈",
+          "price": 3500,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "messages": []
+}
