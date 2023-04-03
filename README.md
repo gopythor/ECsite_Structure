@@ -16,8 +16,35 @@ Test Program : Intellij .http
 
 etc : Logback, Swagger(API document)  
 
-## Project function
+Goal : Build a commerce server that mediates between sellers and buyers.
 
 
-ETC
+## User Server
+### Common
+- [x] Sign up for membership through the verification link via email
+
+### Customer
+- [x]  Join the membership
+- [x]  Authentication (E-mail)
+- [x]  Issuance of login tokens
+- [x]  Check control through login token (simplified using JWT, Filter)
+- [x]  Deposit Management
+
+### Seller
+- [x] Join the membership
+
+
+## Order Server
+
+### Seller
+- [x] Product registration, modification
+- [x] Delete product
+
+### Buyer
+- [x] Redis Integration for Shopping Cart
+- [x] Product search & detail page
+- [x] Add item to cart
+- [x] Check cart
+- [x] Order
+- [ ] Send order details by email
 
