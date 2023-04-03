@@ -2,6 +2,7 @@
 
 ## Project subject 
 - EC Site Using SpringBoot
+Goal : Build a commerce server that mediates between sellers and buyers.
 
 ## Project structure
 ![image](https://user-images.githubusercontent.com/94863168/229589421-829e0ea0-a89b-4494-a4d8-91b9cb952c5e.png)
@@ -10,15 +11,13 @@
 
 ## Tech Stack
 Language : Java  
-DBMS : MySQL, Redis
+DBMS : MySQL, Redis  
 Java Version : Java 11  
-IDE : Intellij IDEA 2023.3.2 (Ultimate Edition)  
-Test Program : Intellij .http
-
-
+IDE : Intellij IDEA 2023.3.2 (Ultimate Edition)    
+Test Program : Intellij .http  
 etc : Logback, Swagger(API document)  
 
-Goal : Build a commerce server that mediates between sellers and buyers.
+
 
 
 ## User Server
