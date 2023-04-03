@@ -9,7 +9,7 @@
 ## Tech Stack
 Language : Java  
 DBMS : MySQL, Redis
-Java Version : Java 8  
+Java Version : Java 11  
 IDE : Intellij IDEA 2023.3.2 (Ultimate Edition)  
 Test Program : Intellij .http
 
