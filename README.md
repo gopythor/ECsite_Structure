@@ -12,6 +12,8 @@ DBMS : MySQL, Redis
 Java Version : Java 8  
 IDE : Intellij IDEA 2023.3.2 (Ultimate Edition)  
 Test Program : Intellij .http
+
+
 etc : Logback, Swagger(API document)  
 
 ## Project function
