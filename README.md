@@ -5,6 +5,8 @@
 
 ## Project structure
 ![image](https://user-images.githubusercontent.com/94863168/229589421-829e0ea0-a89b-4494-a4d8-91b9cb952c5e.png)
+![image](https://user-images.githubusercontent.com/94863168/229592255-bc808999-3ce7-433f-8340-ef9c16931b58.png)
+
 
 ## Tech Stack
 Language : Java  
